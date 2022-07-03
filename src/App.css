@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+body {
+  background-color: #F3B18C;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game {
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  width: 254px;
+  height: 65px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 65px;
+  color: #0026ED;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  width: 300px;
+}
+
+button {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  background: #FFFFFF;
+  outline: 10px solid #000000;
+  border-radius: 10px;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Finger Paint';
+  font-size: 64px;
+}
+
+button:hover {
+  background-color: rgb(192, 188, 188);
+
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.player-x {
+  color: #FF0505;
+}
+
+.player-x:hover {
+  background-color: #FF0505;
+  color: #FFF;
+}
+
+.player-o {
+  color: #0026ED;
+}
+
+.player-o:hover {
+  background-color: #0026ED;
+  color: #FFF;
+}
+
+.player-x-win {
+  outline-color: #FF0505;
+}
+
+.player-o-win {
+  outline-color: #0026ED;
 }

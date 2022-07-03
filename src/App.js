@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Button from "./components/Button";
 
-const INITIAL_BOARD = [    // Oyun ekranımızın alanı
+const INITIAL_BOARD = [    // Oyun Buton Datası
   {
     value: "",
     status: false,
@@ -47,7 +47,7 @@ const PLAYERS = {
 };
 
 function App() {
-  const [gameBoard, setGameBoard] = useState([...INITIAL_BOARD]); //Oyundaki butonların datasını tutan
+  const [gameBoard, setGameBoard] = useState([...INITIAL_BOARD]); //Oyundaki butonların datasını tutan state
   const [gameStatus, setGameStatus] = useState()
 
   const buttonOnClick = (index) => {  // buttonOnClick fonksiyonumuz ile oyun ekranımızdaki kutuların içine değişiyoruz.
@@ -78,14 +78,14 @@ function App() {
       [2, 4, 6],
     ];
 
-    for (let i = 0; i < winConditions.length; i++) {
+    for (let i = 0; i < winConditions.length; i++) {  // Tüm butonları tek tek gezip yukardaki buton indexlerinin eşit olup olmadığını kontrol ediyoruz
       const [a, b, c] = winConditions[i];
 
       if (
         gameBoard[a].value === (gameBoard[b].value && gameBoard[c].value) &&
         gameBoard[a].value !== ""
       ) {
-        const itemA = { ...gameBoard[a] };
+        const itemA = { ...gameBoard[a] }; // Burda gameboard'un içindeki objeyi direk değiştiğimizde initialBoard'daki data da değişiyordu. Bu yüzden kopyasını oluşturdum.
         const itemB = { ...gameBoard[b] };
         const itemC = { ...gameBoard[c] };
 

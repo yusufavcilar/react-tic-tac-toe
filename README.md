@@ -1,10 +1,10 @@
-## patika react todo homework
+## patika react tic-tac-toe project
 
-<img src="./Tic-Tac-Toe.png" />
+<img src="./tic-tac-toe.png" />
 
 ### Introduction
 
-I developed the project with React to complete my Patika.dev homework. I added features such as adding new todo, deleting, filtering, changing its state in the Project. I tried to break up the components as much as possible based on the principle of divide, divide and rule.
+My tic tac toe project that I developed with React.
 
 ### Tools
 
@@ -13,11 +13,11 @@ I developed the project with React to complete my Patika.dev homework. I added f
 
 ### Deployment Link
 
-https://patika-react-todo-hw.vercel.app/
+https://vercel.com/yusufavcilar/react-tic-tac-toe
 
 ### Setup
 
-* Clone project to your computer git clone `https://github.com/yusufavcilar/patika-react-todo-hw`
+* Clone project to your computer git clone `https://github.com/yusufavcilar/react-tic-tac-toe`
 * Install dependencies `npm install`
 * Starting local server `npm run start`
   
@@ -31,7 +31,7 @@ https://patika-react-todo-hw.vercel.app/
 
 ### Repository
 
-https://github.com/yusufavcilar/patika-react-todo-hw
+https://github.com/yusufavcilar/react-tic-tac-toe
 
 ### Licence
 
